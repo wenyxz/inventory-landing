@@ -1,0 +1,22 @@
+<div class="content" [ngClass]="{'reverse': reverseLayout}">
+    <div class="sphere" id="sphere1"></div>
+    <div class="text">
+        <div class="tag">
+            <i-lucide [img]="getIcon()" [size]="24"></i-lucide>
+            {{ tagText }}
+        </div>
+        <div class="title">
+            {{ title }}
+        </div>
+        <div class="desc">
+            {{ description }}
+        </div>
+        <button>
+            View guide
+            <i-lucide [img]="ArrowIcon" [size]="24"></i-lucide>
+        </button>
+    </div>
+    <div class="image">
+        <img [src]="imageSrc" alt="">
+    </div>
+</div>

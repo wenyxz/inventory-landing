@@ -1,0 +1,145 @@
+.footer {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(6, 22, 26, 50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-wrapper {
+    width: 100%; /* Ensures it takes full width if available */
+    max-width: 1440px; /* Restricts max width */
+    height: 100%;
+    padding: 64px 48px 0px 48px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0 auto; /* Centers the wrapper */
+}
+
+.content {
+    display: flex;
+    flex-grow: 1;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding-right: 48px;
+    border-right: 1px solid rgba(6, 22, 26, 75%);
+    flex-shrink: 0;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-logo {
+    width: 91px;
+}
+
+.brand-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.tool-name {
+    font-size: 16px;
+    color: rgba(240, 240, 240, 50%);
+}
+
+.icons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons i {
+    font-size: 20px;
+    color: rgba(240, 240, 240, 50%);
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 24px 0px;
+    border-top: 1px solid rgba(6, 22, 26, 75%);
+    color: rgba(240, 240, 240, 50%);
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.column p {
+    font-size: 16px;
+    color: rgba(240, 240, 240, 50%);
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 859px) {
+    .footer {
+        height: fit-content;
+    }
+
+    .content {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+
+    .links {
+        gap: 64px;
+        flex-direction: column;
+    }
+
+    .socials {
+        margin-top: 24px;
+        border: 0;
+    }
+
+    .footer-wrapper {
+        gap: 24px;
+    }
+
+    .bottom {
+        border: 0;
+    }
+}
+

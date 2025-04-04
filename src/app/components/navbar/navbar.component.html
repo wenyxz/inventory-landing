@@ -1,0 +1,40 @@
+<div class="content">
+    <div class="logo">
+        <img src="assets/tw-logo.png" alt="">
+    </div>
+    <div class="navigation">
+        <!-- Category (Desktop Only) -->
+        <div class="category" *ngIf="!isMobile">
+            <button id="non-colored" (click)="scrollToSection('home')">Home</button>
+            <button id="non-colored" (click)="scrollToSection('features')">Features</button>
+            <button id="non-colored" (click)="scrollToSection('pricing')">Pricing</button>
+        </div>
+        
+        <!-- Menu Section -->
+        <div class="menu" *ngIf="!isMobile">
+            <button id="colored-button" (click)="openInventory()">Inventory</button>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="menu-toggle" *ngIf="isMobile">
+            <button id="list-menu-button" (click)="toggleMenu()">
+                <i-lucide [img]="MenuIcon" [size]="24"></i-lucide>
+            </button>
+        </div>
+
+        <div class="overlay" *ngIf="isMenuOpen" (click)="toggleMenu()"></div>
+
+        <!-- Side Menu (Mobile) -->
+        <div class="list-menu" [class.open]="isMenuOpen">
+            <button id="close-menu" (click)="toggleMenu()">
+                <i-lucide [img]="ExitIcon" [size]="24"></i-lucide>
+            </button>
+            <div class="list">
+                <button id="non-colored" (click)="scrollToSection('home')" (click)="toggleMenu()">Home</button>
+                <button id="non-colored" (click)="scrollToSection('features')" (click)="toggleMenu()">Features</button>
+                <button id="non-colored" (click)="scrollToSection('pricing')" (click)="toggleMenu()">Pricing</button>
+            </div>
+            <button id="colored-button">Inventory</button>
+        </div>
+    </div>
+</div>

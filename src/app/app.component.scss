@@ -1,0 +1,78 @@
+.website {
+    position: relative;
+
+
+}
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+app-page {
+    max-width: 1440px;
+    width: 100%;
+}
+
+.elements {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    .spheres {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+        height: 100%;
+
+        .sphere {
+            z-index: 1;
+            position: absolute;
+            border-radius: 10000px;
+        }
+        
+        #sphere1 {
+            top: 0;
+            left: 0;
+            width: 1228px;
+            height: 1228px;
+            background: var(--blue-sphere-grad);
+            transform: translate(-20%, -20%);
+        }
+        
+        #sphere2 {
+            top: 0;
+            left: 0;
+            width: 1524px;
+            height: 1524px;
+            background: var(--green-sphere-grad);
+            transform: translate(15%, 0%);
+        }
+
+        #sphere3 {
+            top: 0;
+            left: 0;
+            width: 1228px;
+            height: 1228px;
+            background: var(--blue-sphere-grad);
+            transform: translate(-20%, 80%);
+        }
+
+        #sphere4 {
+            top: 0;
+            right: 0;
+            width: 1228px;
+            height: 1228px;
+            background: var(--green-sphere-grad);
+            transform: translate(30%, 120%);
+        }
+
+        #sphere5 {
+            top: 0;
+            left: 0;
+            width: 1528px;
+            height: 1528px;
+            background: var(--blue-sphere-grad);
+            transform: translate(-20%, 140%);
+        }
+    }
+}
